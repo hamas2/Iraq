@@ -1,0 +1,190 @@
+            margin: 0;
+            font-family: 'Cairo', sans-serif;
+            background-color: #121212; /* لون الخلفية الداكن */
+            color: #FFFFFF; /* النص باللون الأبيض */
+            line-height: 1.6;
+            direction: rtl; /* الكتابة من اليمين إلى اليسار */
+            text-align: right; /* محاذاة النص إلى اليمين */
+            overflow-x: hidden; /* منع التمرير الأفقي */
+        }
+        
+        body {
+    font-family: 'Cairo', sans-serif;
+}
+
+body {
+    user-select: none; /* منع تحديد النص */
+}
+
+        header {
+            background-color: #1a1a1a; /* لون الخلفية للـ header */
+            padding: 30px;
+            text-align: center;
+            color: white;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 3.5em;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+        }
+
+        nav {
+            background-color: #1a1a1a; /* لون الخلفية للـ nav */
+            padding: 15px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        nav a {
+            color: #ff2d00; /* اللون الأحمر لعناوين الروابط */
+            margin: 0 20px;
+            text-decoration: none;
+            font-size: 1.2em;
+            transition: color 0.3s;
+            cursor: pointer;
+        }
+
+        nav a:hover {
+            color: #66ff00; /* اللون الأخضر عند التحويم */
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #1E1E1E; /* لون الخلفية للـ container */
+            border-radius: 15px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            color: #ff2d00; /* اللون الأحمر لعناوين الـ h2 */
+            border-bottom: 3px solid #66ff00; /* اللون الأخضر للحد السفلي */
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+            font-size: 2.5em;
+        }
+
+        .symbols {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin: 30px 0;
+        }
+
+        .symbol {
+            text-align: center;
+            margin: 15px;
+            transition: transform 0.3s;
+            cursor: pointer; /* جعل المؤشر يتحول إلى يد عند التحويم */
+        }
+
+        .symbol:hover {
+            transform: scale(1.1);
+        }
+
+        .symbol img {
+            width: 100px;
+            height: auto;
+            object-fit: contain;
+        }
+
+        .symbol p {
+            margin: 0;
+            font-size: 1.1em;
+            color: #FFFFFF; /* نص الرموز باللون الأبيض */
+        }
+
+        .lightbox {
+            display: none; /* إخفاء الفتحة عند عدم الحاجة */
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.8); /* خلفية مظلمة */
+            justify-content: center;
+            align-items: center;
+            z-index: 1000; /* فوق جميع العناصر */
+        }
+
+        .lightbox img {
+            max-width: 90%;
+            max-height: 90%;
+        }
+
+        .close {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            font-size: 2em;
+            color: #FFFFFF;
+            cursor: pointer;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #1a1a1a; /* لون الخلفية في الفوتر */
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            font-size: 1.2em;
+        }
+
+        * {
+            box-sizing: border-box; /* يشمل الحواف والمخططات في حساب العرض */
+            margin: 0; /* إزالة الهوامش */
+            padding: 0; /* إزالة الحشو */
+        }
+        
+<style>
+    .floating-button {
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        width: 50px;
+        height: 50px;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+
+    .floating-button img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+
+    .tweet {
+        background-color: #333; /* خلفية أكثر وضوحاً */
+        padding: 15px;
+        border-radius: 10px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+        margin-bottom: 20px;
+        color: white; /* لون النص الأبيض لجعله أوضح */
+        font-size: 1.2em; /* تكبير حجم النص */
+    }
+
+    .tweet p {
+        color: #ffffff; /* النص باللون الأبيض */
+    }
+    
+    .floating-button {
+    position: fixed;
+    top: 20px; /* المسافة من أعلى الصفحة */
+    right: 20px; /* المسافة من اليمين */
+    width: 50px; /* عرض الزر */
+    height: 50px; /* ارتفاع الزر */
+    background-color: transparent; /* خلفية شفافة إذا أردت ذلك */
+    border: none; /* بدون إطار */
+    cursor: pointer;
+}
+
+.floating-button img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
